@@ -1,9 +1,18 @@
 
+import { Route, Routes } from "react-router-dom";
+import { Cart, FourOFourPage, HomePage, Login, ProductPage, Signup } from './pages'
+
+
 function App() {
   return (
-    <div className="App">
-      <h2 className="font-bold text-lg font-source text-primary bg-ternary">Ipl Stores</h2>
-    </div>
+    <Routes>
+      <Route path='/' element={<HomePage/>}/>
+      <Route path='/products' element={<ProductPage/>}/>
+      <Route path='/login' element={<Login/>}/>
+      <Route path='/signup' element={<Signup/>}/>
+      <Route path='/cart' element={<Cart/>}/>
+      <Route path='/*' element={<FourOFourPage/>}/>
+    </Routes>
   );
 }
 
