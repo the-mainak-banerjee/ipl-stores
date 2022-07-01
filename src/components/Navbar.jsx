@@ -12,8 +12,6 @@ export const Navbar = () => {
     setShowSideBar(prevState => !prevState)
   }
 
-  console.log(showSideBar)
-
   return (
     <>
       <div 

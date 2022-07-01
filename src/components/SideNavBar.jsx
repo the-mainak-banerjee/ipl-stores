@@ -25,9 +25,9 @@ export const SideNavBar = (props) => {
                 className='font-poppins tracking-wider text-lg px-10'>
                 <NavLink 
                 to='/' 
-                className={(navData) => navData.isActive ? 'underline font-semibold text-secondary' : ''}>
+                className={(navData) => navData.isActive ? 'font-semibold text-secondary' : ''}>
                     <li 
-                        className='mt-4 hover:text-secondary'
+                        className='mt-4 hover:p-4 hover:text-primary hover:bg-ternary transition-all'
                         onClick={props.handleSideBar}    
                     >
                         Home
@@ -35,9 +35,9 @@ export const SideNavBar = (props) => {
                 </NavLink>
                 <NavLink 
                 to='/products' 
-                className={(navData) => navData.isActive ? 'underline font-semibold text-secondary' : ''}>
+                className={(navData) => navData.isActive ? 'font-semibold text-secondary' : ''}>
                     <li 
-                        className='mt-4 hover:text-secondary'
+                        className='mt-4 hover:p-4 hover:text-primary hover:bg-ternary transition-all'
                         onClick={props.handleSideBar}
                     >
                         Products
