@@ -7,10 +7,11 @@ module.exports = {
     extend: {
       fontFamily: {
         lora: "'Lora', serif",
-        source: "'Source Sans Pro', sans-serif"
+        poppins: "'Poppins', sans-serif"
       },
       colors: {
         primary: '#453227',
+        primaryHover: '#AB7B60',
         secondary: '#F7CA00',
         secondaryHover: '#fedc44',
         ternary: '#DADADA'
