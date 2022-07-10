@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { AiOutlineShoppingCart } from 'react-icons/ai'
-import { FiUserPlus, FiAlignJustify } from 'react-icons/fi'
+import { FiUserPlus } from 'react-icons/fi'
+import { BsList } from 'react-icons/bs'
 import { SideNavBar } from './SideNavBar'
 
 export const Navbar = () => {
@@ -60,7 +61,7 @@ export const Navbar = () => {
             </li>
           </NavLink>
         </ul>
-        <FiAlignJustify 
+        <BsList 
           size='40px' 
           color='#AB7B60' 
           className='block lg:hidden cursor-pointer'

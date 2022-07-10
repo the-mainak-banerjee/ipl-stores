@@ -1,15 +1,67 @@
 import React, { useEffect } from 'react'
+import { Link } from 'react-router-dom'
+import { CartItems, CartSummary, SubNavbar } from '../components'
 
 export const Cart = () => {
+
+  const cartItems = [
+      {
+        id: 10,
+        name: "CSK Jersy ",
+        description:"Official Match Jersy Of Chennai Super Kings",
+        price: 1299,
+        team: 'csk',
+        catagory: 'jersy',
+        rating: 4.8,
+        discount: 25,
+        src: '../../assets/images/csk/jersy.jpg'
+    },
+    {
+        id: 12,
+        name: "DC Jersy ",
+        description:"Official Match Jersy Of Delhi Capitals",
+        price: 1999,
+        team: 'dc',
+        catagory: 'jersy',
+        rating: 4.8,
+        discount: 20,
+        src: '../../assets/images/dc/jersy.jpg'
+    }
+  ]
 
   useEffect(() => {
     document.title = 'IPLStores-Cart'
   },[])
 
   return (
-    <div>
-      This is Cart Page
-    </div>
+    <>
+    <section>
+        <SubNavbar pageName='Cart'/>
+      </section>
+    <section className='w-full pl-10 mt-10 lg:pl-36'>
+      <div className='flex flex-col flex-1'>
+      {cartItems.map(item => {
+        return(
+          <CartItems 
+            key={item.id}
+            id={item.id}
+            src={item.src}
+            name={item.name}
+            description = {item.description}
+            price = {item.price}
+          />
+        )
+      })}
+      </div>
+      <div className='mx-4 mb-10 flex flex-wrap justify-between items-center w-[80vw] font-poppins'>
+        <button className='bg-secondary px-6 py-2 my-2 hover:bg-secondaryHover'><Link to='/products'>Continue Shopping</Link></button>
+        <button className='bg-primary text-white px-6 py-2 my-2'>Clear Cart</button>
+      </div>
+    </section>
+    <section className='pl-10 lg:pl-36 w-[80vw] sm:w-[60vw] lg:w-[40vw]'>
+      <CartSummary />
+    </section>
+    </>
   )
 }
 

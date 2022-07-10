@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 export const SubNavbar = ({pageName}) => {
   return (
     <div 
-        className='bg-ternary px-10 py-10 lg:px-36'
+        className='bg-ternary pl-10 py-10 lg:px-36'
     >
-      <div className='font-poppins text-lg flex justify-around w-[25vw]'>
+      <div className='font-poppins text-lg flex justify-around w-[25vw] lg:w-[10vw]'>
           <Link to='/'>
             <p>Home</p>
           </Link>

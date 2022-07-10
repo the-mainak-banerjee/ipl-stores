@@ -1,5 +1,334 @@
+import { v4 as uuidV4 } from 'uuid'
+
 export const Products = [
     {
-        
-    }
+        id: uuidV4(),
+        name: "CSK Jersy ",
+        description:"Official Match Jersy Of Chennai Super Kings",
+        price: 1299,
+        team: 'csk',
+        catagory: 'jersy',
+        rating: 4.8,
+        discount: 25,
+        src: '../../assets/images/csk/jersy.jpg'
+    },
+    {
+        id: uuidV4(),
+        name: "DC Jersy ",
+        description:"Official Match Jersy Of Delhi Capitals",
+        price: 1999,
+        team: 'dc',
+        catagory: 'jersy',
+        rating: 4.8,
+        discount: 20,
+        src: '../../assets/images/dc/jersy.jpg'
+    },
+    {
+        id: uuidV4(),
+        name: "GT Jersy ",
+        description:"Official Match Jersy Of Gujrat Titans",
+        price: 1499,
+        team: 'gt',
+        catagory: 'jersy',
+        rating: 4.8,
+        discount: 15,
+        src: '../../assets/images/gt/jersy.jpg'
+    },
+    {
+        id: uuidV4(),
+        name: "KKR Jersy ",
+        description:"Official Match Jersy Of Kolkata Knight Riders",
+        price: 2000,
+        team: 'kkr',
+        catagory: 'jersy',
+        rating: 4.8,
+        discount: 25,
+        src: '../../assets/images/kkr/jersy.png'
+    },
+    {
+        id: uuidV4(),
+        name: "LSG Jersy ",
+        description:"Official Match Jersy Of Lucknow Super Giants",
+        price: 1849,
+        team: 'lsg',
+        catagory: 'jersy',
+        rating: 4.8,
+        discount: 20,
+        src: '../../assets/images/lsg/jersy.png'
+    },
+    {
+        id: uuidV4(),
+        name: "MI Jersy ",
+        description:"Official Match Jersy Of Mumbai Indians",
+        price: 1379,
+        team: 'mi',
+        catagory: 'jersy',
+        rating: 4.8,
+        discount: 18,
+        src: '../../assets/images/mi/jersy.png'
+    },
+    {
+        id: uuidV4(),
+        name: "PBKS Jersy ",
+        description:"Official Match Jersy Of Punjab Kings",
+        price: 1879,
+        team: 'pbks',
+        catagory: 'jersy',
+        rating: 4.8,
+        discount: 25,
+        src: '../../assets/images/pbks/jersy.jpg'
+    },
+    {
+        id: uuidV4(),
+        name: "RCB Jersy ",
+        description:"Official Match Jersy Of Royal Challengers Bangalore",
+        price: 1500,
+        team: 'rcb',
+        catagory: 'jersy',
+        rating: 4.8,
+        discount: 30,
+        src: '../../assets/images/rcb/jersy.jpg'
+    },
+    {
+        id: uuidV4(),
+        name: "RR Jersy ",
+        description:"Official Match Jersy Of Rajasthan Royals",
+        price: 1399,
+        team: 'rr',
+        catagory: 'jersy',
+        rating: 4.8,
+        discount: 25,
+        src: '../../assets/images/rr/jersy.jpg'
+    },
+    {
+        id: uuidV4(),
+        name: "SRH Jersy ",
+        description:"Official Match Jersy Of Sunrisers Hyderabad",
+        price: 1897,
+        team: 'srh',
+        catagory: 'jersy',
+        rating: 4.8,
+        discount: 25,
+        src: '../../assets/images/srh/jersy.jpg'
+    },
+    {
+        id: uuidV4(),
+        name: "CSK Cap ",
+        description:"Official Cap of Chennai Super Kings",
+        price: 299,
+        team: 'csk',
+        catagory: 'cap',
+        rating: 3,
+        discount: 15,
+        src: '../../assets/images/csk/cap.jpg'
+    },
+    {
+        id: uuidV4(),
+        name: "CSK Mask ",
+        description:"Official Mask Of Chennai Super Kings",
+        price: 169,
+        team: 'csk',
+        catagory: 'mask',
+        rating: 4,
+        discount: 10,
+        src: '../../assets/images/csk/mask.jpg'
+    },
+    {
+        id: uuidV4(),
+        name: "DC Cap ",
+        description:"Official Cap of Delhi Capitals",
+        price: 249,
+        team: 'dc',
+        catagory: 'cap',
+        rating: 3.8,
+        discount: 15,
+        src: '../../assets/images/dc/cap.jpg'
+    },
+    {
+        id: uuidV4(),
+        name: "DC Mask ",
+        description:"Official Mask Of Delhi Capitals",
+        price: 199,
+        team: 'dc',
+        catagory: 'mask',
+        rating: 4.5,
+        discount: 10,
+        src: '../../assets/images/dc/mask.jpg'
+    },
+    {
+        id: uuidV4(),
+        name: "GT Cap ",
+        description:"Official Cap of Gujrat Titans",
+        price: 299,
+        team: 'gt',
+        catagory: 'cap',
+        rating: 4.2,
+        discount: 15,
+        src: '../../assets/images/gt/cap.jpg'
+    },
+    {
+        id: uuidV4(),
+        name: "GT Mask ",
+        description:"Official Mask Of Gujrat Titans",
+        price: 149,
+        team: 'gt',
+        catagory: 'mask',
+        rating: 4.8,
+        discount: 10,
+        src: '../../assets/images/gt/mask.jpg'
+    },
+    {
+        id: uuidV4(),
+        name: "KKR Cap ",
+        description:"Official Cap of Kolkata Knight Riders",
+        price: 249,
+        team: 'kkr',
+        catagory: 'cap',
+        rating: 4.8,
+        discount: 15,
+        src: '../../assets/images/kkr/cap.jpg'
+    },
+    {
+        id: uuidV4(),
+        name: "KKR Mask ",
+        description:"Official Mask Of Kolkata Knight Riders",
+        price: 160,
+        team: 'kkr',
+        catagory: 'mask',
+        rating: 4,
+        discount: 10,
+        src: '../../assets/images/kkr/mask.jpg'
+    },
+    {
+        id: uuidV4(),
+        name: "LSG Cap ",
+        description:"Official Cap of Lucknow Super Giants",
+        price: 269,
+        team: 'lsg',
+        catagory: 'cap',
+        rating: 3.5,
+        discount: 15,
+        src: '../../assets/images/lsg/cap.jpg'
+    },
+    {
+        id: uuidV4(),
+        name: "LSG Mask ",
+        description:"Official Mask Of Lucknow Super Giants",
+        price: 119,
+        team: 'lsg',
+        catagory: 'mask',
+        rating: 4.5,
+        discount: 10,
+        src: '../../assets/images/lsg/mask.jpg'
+    },
+    {
+        id: uuidV4(),
+        name: "MI Cap ",
+        description:"Official Cap of Mumbai Indians",
+        price: 280,
+        team: 'mi',
+        catagory: 'cap',
+        rating: 4.2,
+        discount: 15,
+        src: '../../assets/images/mi/cap.jpg'
+    },
+    {
+        id: uuidV4(),
+        name: "MI Mask ",
+        description:"Official Mask Of Mumbai Indians",
+        price: 110,
+        team: 'mi',
+        catagory: 'mask',
+        rating: 4.9,
+        discount: 10,
+        src: '../../assets/images/mi/mask.png'
+    },
+    {
+        id: uuidV4(),
+        name: "PBKS Cap ",
+        description:"Official Cap of Punjab Kings",
+        price: 279,
+        team: 'pbks',
+        catagory: 'cap',
+        rating: 4.5,
+        discount: 15,
+        src: '../../assets/images/pbks/cap.jpg'
+    },
+    {
+        id: uuidV4(),
+        name: "PBKS Mask ",
+        description:"Official Mask Of Punjab Kings",
+        price: 154,
+        team: 'pbks',
+        catagory: 'mask',
+        rating: 3.6,
+        discount: 10,
+        src: '../../assets/images/pbks/mask.jpg'
+    },
+    {
+        id: uuidV4(),
+        name: "RCB Cap ",
+        description:"Official Cap of Royal Challengers Bangalore",
+        price: 249,
+        team: 'rcb',
+        catagory: 'cap',
+        rating: 4.9,
+        discount: 15,
+        src: '../../assets/images/rcb/cap.jpg'
+    },
+    {
+        id: uuidV4(),
+        name: "RCB Mask ",
+        description:"Official Mask Of Royal Challengers Bangalore",
+        price: 149,
+        team: 'rcb',
+        catagory: 'mask',
+        rating: 4,
+        discount: 10,
+        src: '../../assets/images/rcb/mask.jpg'
+    },
+    {
+        id: uuidV4(),
+        name: "RR Cap ",
+        description:"Official Cap of Rajasthan Royals",
+        price: 289,
+        team: 'rr',
+        catagory: 'cap',
+        rating: 4,
+        discount: 15,
+        src: '../../assets/images/rr/cap.jpg'
+    },
+    {
+        id: uuidV4(),
+        name: "RR Mask ",
+        description:"Official Mask Of Rajasthan Royals",
+        price: 115,
+        team: 'rr',
+        catagory: 'mask',
+        rating: 3.6,
+        discount: 10,
+        src: '../../assets/images/rr/mask.jpg'
+    },
+    {
+        id: uuidV4(),
+        name: "SRH Cap ",
+        description:"Official Cap of Sunrisers Hyderabad",
+        price: 200,
+        team: 'srh',
+        catagory: 'cap',
+        rating: 4.3,
+        discount: 15,
+        src: '../../assets/images/srh/cap.jpg'
+    },
+    {
+        id: uuidV4(),
+        name: "SRH Mask ",
+        description:"Official Mask Of Sunrisers Hyderabad",
+        price: 109,
+        team: 'srh',
+        catagory: 'mask',
+        rating: 4.9,
+        discount: 10,
+        src: '../../assets/images/srh/mask.jpg'
+    },
 ]
