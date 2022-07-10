@@ -22,7 +22,7 @@ export const ProductDetailsPage = () => {
       {product && <section className='py-10 px-4'>
         <h3 className='text-center font-lora text-3xl'>Related Products</h3>
         <ProductList
-          products={relatedProducts}
+          products={relatedProducts.slice(0,4)}
         />
       </section>}
     </>

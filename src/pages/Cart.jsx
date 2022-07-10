@@ -33,6 +33,19 @@ export const Cart = () => {
     document.title = 'IPLStores-Cart'
   },[])
 
+  const displayCartItems = cartItems.map(item => {
+    return(
+      <CartItems 
+        key={item.id}
+        id={item.id}
+        src={item.src}
+        name={item.name}
+        description = {item.description}
+        price = {item.price}
+      />
+    )
+  })
+
   return (
     <>
     <section>
@@ -40,18 +53,7 @@ export const Cart = () => {
       </section>
     <section className='w-full pl-10 mt-10 lg:pl-36'>
       <div className='flex flex-col flex-1'>
-      {cartItems.map(item => {
-        return(
-          <CartItems 
-            key={item.id}
-            id={item.id}
-            src={item.src}
-            name={item.name}
-            description = {item.description}
-            price = {item.price}
-          />
-        )
-      })}
+      {displayCartItems}
       </div>
       <div className='mx-4 mb-10 flex flex-wrap justify-between items-center w-[80vw] font-poppins'>
         <button className='bg-secondary px-6 py-2 my-2 hover:bg-secondaryHover'><Link to='/products'>Continue Shopping</Link></button>
