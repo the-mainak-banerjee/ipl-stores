@@ -10,7 +10,8 @@ export const Products = [
         catagory: 'jersy',
         rating: 4.8,
         discount: 25,
-        src: '../../assets/images/csk/jersy.jpg'
+        src: '../../assets/images/csk/jersy.jpg',
+        featured: false
     },
     {
         id: uuidV4(),
@@ -21,7 +22,8 @@ export const Products = [
         catagory: 'jersy',
         rating: 4.8,
         discount: 20,
-        src: '../../assets/images/dc/jersy.jpg'
+        src: '../../assets/images/dc/jersy.jpg',
+        featured: false
     },
     {
         id: uuidV4(),
@@ -32,7 +34,8 @@ export const Products = [
         catagory: 'jersy',
         rating: 4.8,
         discount: 15,
-        src: '../../assets/images/gt/jersy.jpg'
+        src: '../../assets/images/gt/jersy.jpg',
+        featured: false
     },
     {
         id: uuidV4(),
@@ -43,7 +46,8 @@ export const Products = [
         catagory: 'jersy',
         rating: 4.8,
         discount: 25,
-        src: '../../assets/images/kkr/jersy.png'
+        src: '../../assets/images/kkr/jersy.png',
+        featured: true
     },
     {
         id: uuidV4(),
@@ -54,7 +58,8 @@ export const Products = [
         catagory: 'jersy',
         rating: 4.8,
         discount: 20,
-        src: '../../assets/images/lsg/jersy.png'
+        src: '../../assets/images/lsg/jersy.png',
+        featured: false
     },
     {
         id: uuidV4(),
@@ -65,7 +70,8 @@ export const Products = [
         catagory: 'jersy',
         rating: 4.8,
         discount: 18,
-        src: '../../assets/images/mi/jersy.png'
+        src: '../../assets/images/mi/jersy.png',
+        featured: false
     },
     {
         id: uuidV4(),
@@ -76,7 +82,8 @@ export const Products = [
         catagory: 'jersy',
         rating: 4.8,
         discount: 25,
-        src: '../../assets/images/pbks/jersy.jpg'
+        src: '../../assets/images/pbks/jersy.jpg',
+        featured: false
     },
     {
         id: uuidV4(),
@@ -87,7 +94,8 @@ export const Products = [
         catagory: 'jersy',
         rating: 4.8,
         discount: 30,
-        src: '../../assets/images/rcb/jersy.jpg'
+        src: '../../assets/images/rcb/jersy.jpg',
+        featured: false
     },
     {
         id: uuidV4(),
@@ -98,7 +106,8 @@ export const Products = [
         catagory: 'jersy',
         rating: 4.8,
         discount: 25,
-        src: '../../assets/images/rr/jersy.jpg'
+        src: '../../assets/images/rr/jersy.jpg',
+        featured: true
     },
     {
         id: uuidV4(),
@@ -109,7 +118,8 @@ export const Products = [
         catagory: 'jersy',
         rating: 4.8,
         discount: 25,
-        src: '../../assets/images/srh/jersy.jpg'
+        src: '../../assets/images/srh/jersy.jpg',
+        featured: false
     },
     {
         id: uuidV4(),
@@ -120,7 +130,8 @@ export const Products = [
         catagory: 'cap',
         rating: 3,
         discount: 15,
-        src: '../../assets/images/csk/cap.jpg'
+        src: '../../assets/images/csk/cap.jpg',
+        featured: false
     },
     {
         id: uuidV4(),
@@ -131,7 +142,8 @@ export const Products = [
         catagory: 'mask',
         rating: 4,
         discount: 10,
-        src: '../../assets/images/csk/mask.jpg'
+        src: '../../assets/images/csk/mask.jpg',
+        featured: false
     },
     {
         id: uuidV4(),
@@ -142,7 +154,8 @@ export const Products = [
         catagory: 'cap',
         rating: 3.8,
         discount: 15,
-        src: '../../assets/images/dc/cap.jpg'
+        src: '../../assets/images/dc/cap.jpg',
+        featured: false
     },
     {
         id: uuidV4(),
@@ -153,7 +166,8 @@ export const Products = [
         catagory: 'mask',
         rating: 4.5,
         discount: 10,
-        src: '../../assets/images/dc/mask.jpg'
+        src: '../../assets/images/dc/mask.jpg',
+        featured: true
     },
     {
         id: uuidV4(),
@@ -164,7 +178,8 @@ export const Products = [
         catagory: 'cap',
         rating: 4.2,
         discount: 15,
-        src: '../../assets/images/gt/cap.jpg'
+        src: '../../assets/images/gt/cap.jpg',
+        featured: false
     },
     {
         id: uuidV4(),
@@ -175,7 +190,8 @@ export const Products = [
         catagory: 'mask',
         rating: 4.8,
         discount: 10,
-        src: '../../assets/images/gt/mask.jpg'
+        src: '../../assets/images/gt/mask.jpg',
+        featured: false
     },
     {
         id: uuidV4(),
@@ -186,7 +202,8 @@ export const Products = [
         catagory: 'cap',
         rating: 4.8,
         discount: 15,
-        src: '../../assets/images/kkr/cap.jpg'
+        src: '../../assets/images/kkr/cap.jpg',
+        featured: false
     },
     {
         id: uuidV4(),
@@ -197,7 +214,8 @@ export const Products = [
         catagory: 'mask',
         rating: 4,
         discount: 10,
-        src: '../../assets/images/kkr/mask.jpg'
+        src: '../../assets/images/kkr/mask.jpg',
+        featured: false
     },
     {
         id: uuidV4(),
@@ -208,7 +226,8 @@ export const Products = [
         catagory: 'cap',
         rating: 3.5,
         discount: 15,
-        src: '../../assets/images/lsg/cap.jpg'
+        src: '../../assets/images/lsg/cap.jpg',
+        featured: true
     },
     {
         id: uuidV4(),
@@ -219,7 +238,8 @@ export const Products = [
         catagory: 'mask',
         rating: 4.5,
         discount: 10,
-        src: '../../assets/images/lsg/mask.jpg'
+        src: '../../assets/images/lsg/mask.jpg',
+        featured: false
     },
     {
         id: uuidV4(),
@@ -230,7 +250,8 @@ export const Products = [
         catagory: 'cap',
         rating: 4.2,
         discount: 15,
-        src: '../../assets/images/mi/cap.jpg'
+        src: '../../assets/images/mi/cap.jpg',
+        featured: false
     },
     {
         id: uuidV4(),
@@ -241,7 +262,8 @@ export const Products = [
         catagory: 'mask',
         rating: 4.9,
         discount: 10,
-        src: '../../assets/images/mi/mask.png'
+        src: '../../assets/images/mi/mask.png',
+        featured: false
     },
     {
         id: uuidV4(),
@@ -252,7 +274,8 @@ export const Products = [
         catagory: 'cap',
         rating: 4.5,
         discount: 15,
-        src: '../../assets/images/pbks/cap.jpg'
+        src: '../../assets/images/pbks/cap.jpg',
+        featured: false
     },
     {
         id: uuidV4(),
@@ -263,7 +286,8 @@ export const Products = [
         catagory: 'mask',
         rating: 3.6,
         discount: 10,
-        src: '../../assets/images/pbks/mask.jpg'
+        src: '../../assets/images/pbks/mask.jpg',
+        featured: false
     },
     {
         id: uuidV4(),
@@ -274,7 +298,8 @@ export const Products = [
         catagory: 'cap',
         rating: 4.9,
         discount: 15,
-        src: '../../assets/images/rcb/cap.jpg'
+        src: '../../assets/images/rcb/cap.jpg',
+        featured: false
     },
     {
         id: uuidV4(),
@@ -285,7 +310,8 @@ export const Products = [
         catagory: 'mask',
         rating: 4,
         discount: 10,
-        src: '../../assets/images/rcb/mask.jpg'
+        src: '../../assets/images/rcb/mask.jpg',
+        featured: false
     },
     {
         id: uuidV4(),
@@ -296,7 +322,8 @@ export const Products = [
         catagory: 'cap',
         rating: 4,
         discount: 15,
-        src: '../../assets/images/rr/cap.jpg'
+        src: '../../assets/images/rr/cap.jpg',
+        featured: false
     },
     {
         id: uuidV4(),
@@ -307,7 +334,8 @@ export const Products = [
         catagory: 'mask',
         rating: 3.6,
         discount: 10,
-        src: '../../assets/images/rr/mask.jpg'
+        src: '../../assets/images/rr/mask.jpg',
+        featured: false
     },
     {
         id: uuidV4(),
@@ -318,7 +346,8 @@ export const Products = [
         catagory: 'cap',
         rating: 4.3,
         discount: 15,
-        src: '../../assets/images/srh/cap.jpg'
+        src: '../../assets/images/srh/cap.jpg',
+        featured: false
     },
     {
         id: uuidV4(),
@@ -329,6 +358,7 @@ export const Products = [
         catagory: 'mask',
         rating: 4.9,
         discount: 10,
-        src: '../../assets/images/srh/mask.jpg'
+        src: '../../assets/images/srh/mask.jpg',
+        featured: false
     },
 ]

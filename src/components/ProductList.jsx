@@ -63,7 +63,7 @@ export const ProductList = ({ products }) => {
         />
         <p className='font-poppins mx-2'>{products?.length} Products Found</p>
       </div>
-      <hr/>
+      <hr className='border-primary'/>
       <div className='flex flex-wrap items-center justify-center'>
         {allProducts}
       </div>

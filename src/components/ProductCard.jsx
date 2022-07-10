@@ -12,7 +12,7 @@ export const ProductCard = ({id,name,description,price,src,discount, showBoxStyl
             className='h-auto sm:h-80 flex items-center justify-center bg-ternary p-2'>
             <img 
               src={src} 
-              alt='CSK Jersy' 
+              alt={name}
               className='transition-all w-full h-full object-cover cursor-pointer hover:scale-125 hover:shadow-xl hover:rounded-md'  
             />
           </div>
@@ -32,7 +32,7 @@ export const ProductCard = ({id,name,description,price,src,discount, showBoxStyl
           <div>
             <img 
               src={src} 
-              alt='CSK Jersy' 
+              alt={name} 
               className='hover:scale-105  hover:shadow-xl hover:rounded-md transition-all w-60 h-full object-fit cursor-pointer'
             />
           </div>
