@@ -1,8 +1,10 @@
 import React, { useEffect } from 'react'
-import { Products } from '../backend/db'
 import { FilterBar, ProductList, SubNavbar } from '../components'
+import { useFilter } from '../context/filter-context'
 
 export const ProductPage = () => {
+
+  const { filteredProducts } = useFilter()
 
   useEffect(() => {
     document.title = 'IPLStores-Products'
@@ -16,7 +18,7 @@ export const ProductPage = () => {
       <section className='flex flex-col xl:flex-row w-full pl-10 mt-10 lg:pl-36'>
           <FilterBar />
           <ProductList 
-            products = {Products}
+            products = {filteredProducts}
           />
       </section>
     </>

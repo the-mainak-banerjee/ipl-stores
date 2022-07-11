@@ -10,20 +10,43 @@ export const ProductList = ({ products }) => {
   const pageLimit = 3;
   const [showBoxStyle, setShowBoxStyle] = useState(false)
   const [currentPage,setCurrentPage] = useState(1)
-  const [totalPages] = useState(Math.round(products?.length / dataLimit))
+  // const [totalPages, setTotalPages] = useState()
 
-  useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    })
-  },[currentPage])
+  
+  // useEffect(() => {
+    //   setTotalPages(Math.ceil(products?.length / dataLimit))
+    //   setCurrentPage(1)
+    // },[products?.length,dataLimit])
+    
+    
+    
+  const totalPages =  (Math.ceil(products?.length / dataLimit))
 
-  function getPaginatedData(){
-    const startIndex = (currentPage * dataLimit) - dataLimit
-    const endIndex = startIndex + dataLimit
-    return products?.slice(startIndex,endIndex)
+  function getProductsForPage(num) {
+    let page = num - 1;
+    if(page === 0){
+      return products?.slice(0,dataLimit)
+    }
+    
+    if(page * dataLimit < products?.length){
+      const startIndex = page * dataLimit
+      const endIndex = 
+      products?.length < startIndex + dataLimit
+      ? products?.length
+      : startIndex + dataLimit
+      return products?.slice(startIndex,endIndex)
+    }
+    setCurrentPage(1)
+    return products?.slice(0,dataLimit)
   }
+
+  const getPaginatedData = getProductsForPage(currentPage)
+
+  // function getPaginatedData(){
+  //   const startIndex = (currentPage * dataLimit) - dataLimit
+  //   const endIndex = startIndex + dataLimit
+  //   return products?.slice(startIndex,endIndex)
+  // }
 
   function getPaginationGroup(){
     const start = Math.floor((currentPage - 1) / pageLimit) * pageLimit
@@ -36,7 +59,14 @@ export const ProductList = ({ products }) => {
     }
   }
 
-  const allProducts = getPaginatedData()?.map(item => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  },[currentPage])
+
+  const allProducts = getPaginatedData?.map(item => {
     return (
       <ProductCard
         key={uuidV4()}
@@ -54,6 +84,7 @@ export const ProductList = ({ products }) => {
 
   return (
     <div className='lg:px-36 lg:flex-1'>
+
       <div className='flex items-center pb-4'>
         <BiBorderAll className={!showBoxStyle ? 'cursor-pointer text-secondary': 'cursor-pointer'} size='30px'
           onClick={() => setShowBoxStyle(false)}
@@ -63,10 +94,16 @@ export const ProductList = ({ products }) => {
         />
         <p className='font-poppins mx-2'>{products?.length} Products Found</p>
       </div>
+
       <hr className='border-primary'/>
-      <div className='flex flex-wrap items-center justify-center'>
-        {allProducts}
-      </div>
+
+      {products?.length > 0 
+        ? <div className='flex flex-wrap items-center justify-center'>
+            {allProducts}
+          </div>
+        : <h3 className='text-xl font-bold font-lora py-8'>Sorry No Products Match Your Search</h3>    
+      }
+
       {products?.length > dataLimit && <div className='my-4 flex items-center justify-center'>
         {/* previous buton */}
         <button
