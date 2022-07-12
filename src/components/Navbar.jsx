@@ -78,7 +78,7 @@ export const Navbar = () => {
             : <NavLink to='/login'
                 className={(navData) => navData.isActive ? 'underline font-semibold text-primaryHover hidden lg:block' : 'hidden lg:block'}>
                 <buton 
-                  className='text-xl flex items-center border-2 border-primary px-4 py-2 rounded-md hover:bg-primary hover:text-white transition-all'>
+                  className='text-xl flex items-center border-2 border-primary px-4 py-2 rounded-lg hover:bg-primary hover:text-white transition-all'>
                   <p className='mr-2'>Login</p>
                   <FiUserPlus/>
                 </buton>

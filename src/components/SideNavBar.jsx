@@ -93,7 +93,7 @@ export const SideNavBar = (props) => {
                     <NavLink to='/login'
                         className={(navData) => navData.isActive ? 'font-semibold text-primaryHover' : ''}>
                         <button 
-                            className='mr-4 flex items-center tracking-wider text-[1.5rem] border-primary border-2 px-4 py-2 rounded-md hover:bg-primary hover:text-white transition-all'
+                            className='mr-4 flex items-center tracking-wider text-[1.5rem] border-primary border-2 px-4 py-2 rounded-lg hover:bg-primary hover:text-white transition-all'
                             onClick={props.handleSideBar}    
                         >
                             <p className='mr-2'>Login</p>

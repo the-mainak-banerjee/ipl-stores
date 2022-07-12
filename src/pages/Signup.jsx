@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Input } from '../components/Input';
 import { FaUserCheck } from 'react-icons/fa'
+import { PrimaryButton } from '../components';
 
 
 export const Signup = () => {
@@ -70,9 +71,9 @@ export const Signup = () => {
                 value={signUpData.password}
                 onChange={(e) => setSignUpData(prevData => ({...prevData, password:e.target.value}))}
               />
-              <button disabled={!isValidEmail || !isValidPassword || !isValidName} className='bg-primary hover:bg-primaryHover hover:text-black py-3 mt-6 mb-2 rounded font-bold disabled:bg-[#909090] disabled:text-gray-600'>
+              <PrimaryButton disabled={!isValidEmail || !isValidPassword || !isValidName} >
                 Sign Up
-              </button>
+              </PrimaryButton>
               <Link to='/login' className='flex items-center justify-center text-lg font-lora text-primaryHover hover:text-primary cursor-pointer'>
                 <FaUserCheck size='20px'/>
                 <h3 className='ml-2'>Already Have An Account?</h3>

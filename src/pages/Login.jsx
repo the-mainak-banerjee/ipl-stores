@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Input } from '../components/Input'
 import { FaUserPlus } from 'react-icons/fa'
+import { PrimaryButton } from '../components'
 
 
 export const Login = () => {
@@ -64,9 +65,9 @@ export const Login = () => {
                     Use Guest Login
                 </p>
               </div>
-              <button disabled={!isValidEmail || !isValidPassword} className='bg-primary hover:bg-primaryHover hover:text-black py-3 mt-6 mb-2 rounded font-bold disabled:bg-[#909090] disabled:text-gray-600'>
-                Log In
-              </button>
+                <PrimaryButton disabled={!isValidEmail || !isValidPassword}>
+                  Log In
+                </PrimaryButton>
               <Link to='/signup' className='flex items-center justify-center text-lg font-lora text-primaryHover hover:text-primary cursor-pointer'>
                 <FaUserPlus size='20px'/>
                 <h3 className='ml-2'>Create A New Account</h3>

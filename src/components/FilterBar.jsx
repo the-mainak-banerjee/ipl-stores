@@ -1,5 +1,6 @@
 import React from 'react'
 import { useFilter } from '../context/filter-context'
+import { PrimaryButton } from './PrimaryButton'
 
 
 export const FilterBar = () => {
@@ -62,7 +63,7 @@ export const FilterBar = () => {
           <p>{state.priceRange}</p>
         </div>
 
-        <div className='flex flex-col items-start mb-6'>
+        <div className='flex flex-col items-start mb-4'>
           <p className='mb-2 font-lora text-xl'>Sort By</p>
           <span className='flex'>
             <input type='radio' id='lth' name='sortBy' value='Low' checked={state.sortBy === 'Low'} onChange={handleSortBy}/> 
@@ -83,7 +84,7 @@ export const FilterBar = () => {
         </div>
 
         <div>
-          <button type='button' className='bg-primary text-white px-4 py-2 hover:bg-secondary hover:text-black' onClick={handleClear}>Clear Filter</button>
+          <PrimaryButton onClick={handleClear}>Clear Filter</PrimaryButton>
         </div>
 
       </aside>
