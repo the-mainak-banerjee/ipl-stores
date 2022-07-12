@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { Input } from '../components/Input'
 import { FaUserPlus } from 'react-icons/fa'
 
+
 export const Login = () => {
 
   const [loginData, setLoginData] = useState({email:'', password: ''})

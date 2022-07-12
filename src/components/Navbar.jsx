@@ -8,7 +8,7 @@ import { SideNavBar } from './SideNavBar'
 export const Navbar = () => {
 
   const [showSideBar,setShowSideBar] = useState(false)
-  const user = false
+  const user = true
 
   function handleSideBar(){
     setShowSideBar(prevState => !prevState)
@@ -54,18 +54,18 @@ export const Navbar = () => {
         {user 
           ? <ul 
               className='hidden lg:flex items-center font-poppins tracking-wider text-[1.3rem]'>
-              <NavLink to='/cart'
+              <NavLink to='/wishlist'
                 className={(navData) => navData.isActive ? 'underline font-semibold text-primaryHover' : ''}>
                 <li 
                   className='mr-4 hover:text-primaryHover'>
-                  <AiOutlineShoppingCart/>
+                  <AiOutlineHeart/>
                 </li>
               </NavLink>
               <NavLink to='/cart'
                 className={(navData) => navData.isActive ? 'underline font-semibold text-primaryHover' : ''}>
                 <li 
                   className='mr-4 hover:text-primaryHover'>
-                  <AiOutlineHeart/>
+                   <AiOutlineShoppingCart/>
                 </li>
               </NavLink>
               <li className='mr-4 flex items-center text-[1rem] cursor-pointer '>
