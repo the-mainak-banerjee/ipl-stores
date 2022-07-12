@@ -20,24 +20,24 @@ export const Navbar = () => {
         <NavLink to='/'>
           <h2 
             className='font-extrabold font-lora text-[2rem]'>
-              IPL<span className='text-primaryHover'>Stores</span>
+              IPL<span className='text-primary'>Stores</span>
           </h2>
         </NavLink>
         <ul 
           className='hidden lg:flex items-center font-poppins tracking-wider'>
           <NavLink 
             to='/' 
-            className={(navData) => navData.isActive ? 'underline font-semibold text-secondary' : ''}>
+            className={(navData) => navData.isActive ? 'underline font-semibold text-primary' : ''}>
               <li 
-                className='mr-8 hover:text-secondary'>
+                className='mr-8 hover:text-primaryHover'>
                 Home
               </li>
           </NavLink>
           <NavLink 
             to='/products' 
-            className={(navData) => navData.isActive ? 'underline font-semibold text-secondary' : ''}>
+            className={(navData) => navData.isActive ? 'underline font-semibold text-primary' : ''}>
             <li 
-              className='mr-8 hover:text-secondary'>
+              className='mr-8 hover:text-primaryHover'>
               Products
             </li>
           </NavLink>
@@ -63,7 +63,7 @@ export const Navbar = () => {
         </ul>
         <BsList 
           size='40px' 
-          color='#AB7B60' 
+          color='#7E74F8' 
           className='block lg:hidden cursor-pointer'
           onClick={handleSideBar}
           />

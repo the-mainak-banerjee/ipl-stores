@@ -1,7 +1,7 @@
 
 import { Route, Routes } from "react-router-dom";
 import { Cart, FourOFourPage, HomePage, Login, ProductPage, Signup, ProductDetailsPage } from './pages'
-import { Navbar } from './components'
+import { Footer, Navbar } from './components'
 import ScrollToTop from "./utils/ScrollToTop";
 
 
@@ -19,6 +19,7 @@ function App() {
         <Route path='/cart' element={<Cart/>}/>
         <Route path='/*' element={<FourOFourPage/>}/>
       </Routes>
+      <Footer/>
     </ScrollToTop>
     </>
   );

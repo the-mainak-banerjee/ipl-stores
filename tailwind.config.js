@@ -10,8 +10,10 @@ module.exports = {
         poppins: "'Poppins', sans-serif"
       },
       colors: {
-        primary: '#453227',
-        primaryHover: '#AB7B60',
+        // primary: '#453227',
+        primary: '#482DC9',
+        // primaryHover: '#AB7B60',
+        primaryHover: '#7B60FC',
         secondary: '#F7CA00',
         secondaryHover: '#fedc44',
         ternary: '#DADADA'

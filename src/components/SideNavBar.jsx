@@ -7,7 +7,7 @@ import { ImCross } from 'react-icons/im'
 
 export const SideNavBar = (props) => {
   return (
-    <div className='w-full h-full fixed top-4 left-0 bg-white'>
+    <div className='w-full h-full fixed top-4 left-0 bg-[#F0F0F0] z-50'>
         <div className='flex justify-between px-10'>
             <h2 
                 className='font-extrabold font-lora text-[2rem]'>
@@ -15,7 +15,7 @@ export const SideNavBar = (props) => {
             </h2>  
             <ImCross 
                 size='35px'
-                color='#AB7B60' 
+                color='#7E74F8' 
                 className='block cursor-pointer'
                 onClick={props.handleSideBar}
             />

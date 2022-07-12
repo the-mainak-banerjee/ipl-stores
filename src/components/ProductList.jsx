@@ -86,10 +86,10 @@ export const ProductList = ({ products }) => {
     <div className='lg:px-36 lg:flex-1'>
 
       <div className='flex items-center pb-4'>
-        <BiBorderAll className={!showBoxStyle ? 'cursor-pointer text-secondary': 'cursor-pointer'} size='30px'
+        <BiBorderAll className={!showBoxStyle ? 'cursor-pointer text-primary': 'cursor-pointer'} size='30px'
           onClick={() => setShowBoxStyle(false)}
         />
-        <BsList className={showBoxStyle ? 'cursor-pointer text-secondary' : 'cursor-pointer'} size='30px'
+        <BsList className={showBoxStyle ? 'cursor-pointer text-primary' : 'cursor-pointer'} size='30px'
           onClick={() => setShowBoxStyle(true)}
         />
         <p className='font-poppins mx-2'>{products?.length} Products Found</p>
