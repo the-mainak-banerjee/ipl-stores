@@ -48,21 +48,29 @@ export const Cart = () => {
 
   return (
     <>
-    <section>
-        <SubNavbar pageName='Cart'/>
+      <section>
+          <SubNavbar pageName='Cart'/>
       </section>
-    <section className='w-full pl-10 mt-10 lg:pl-36'>
-      <div className='flex flex-col flex-1'>
-      {displayCartItems}
-      </div>
-      <div className='mx-4 mb-10 flex flex-wrap justify-between items-center w-[80vw] font-poppins'>
-        <button className='bg-secondary px-6 py-2 my-2 hover:bg-secondaryHover'><Link to='/products'>Continue Shopping</Link></button>
-        <button className='bg-primary text-white px-6 py-2 my-2'>Clear Cart</button>
-      </div>
-    </section>
-    <section className='pl-10 lg:pl-36 w-[80vw] sm:w-[60vw] lg:w-[40vw]'>
-      <CartSummary />
-    </section>
+      {cartItems?.length > 0 
+        ? <section className='w-full pl-10 mt-10 lg:pl-36'>
+            <div className='flex flex-col flex-1'>
+            {displayCartItems}
+            </div>
+            <div className='mx-4 mb-10 flex flex-wrap justify-between items-center w-[80vw] font-poppins'>
+              <button className='bg-secondary px-6 py-2 my-2 hover:bg-secondaryHover'><Link to='/products'>Continue Shopping</Link></button>
+              <button className='bg-primary text-white px-6 py-2 my-2'>Clear Cart</button>
+            </div>
+            <div className='w-[80vw] sm:w-[60vw] lg:w-[40vw]'>
+              <CartSummary />
+            </div>
+        </section> 
+        : <section className='w-full pl-10 mt-10 lg:pl-36 font-poppins'>
+            <div className='h-[60vh] flex flex-col items-center justify-center'>
+              <h3 className='text-2xl font-bold font-lora py-4'>Your Cart Is Empty</h3> 
+              <Link to='/products'><button className='bg-primary text-white px-12 py-2 rounded-lg text-xl shadow-xl hover:bg-primaryHover hover:scale-105'>Fill It</button></Link>
+            </div>
+          </section>
+      }
     </>
   )
 }
