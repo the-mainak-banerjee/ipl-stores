@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { CartItems, CartSummary, PrimaryButton, SubNavbar } from '../components'
+import { AiOutlineShoppingCart } from 'react-icons/ai'
 
 export const Cart = () => {
 
@@ -67,7 +68,7 @@ export const Cart = () => {
         : <section className='w-full pl-10 mt-10 lg:pl-36 font-poppins'>
             <div className='h-[60vh] flex flex-col items-center justify-center'>
               <h3 className='text-2xl font-bold font-lora'>Your Cart Is Empty</h3> 
-              <Link to='/products'><PrimaryButton>Fill It</PrimaryButton></Link>
+              <Link to='/products'><PrimaryButton>Fill It <AiOutlineShoppingCart className='ml-2'/></PrimaryButton></Link>
             </div>
           </section>
       }

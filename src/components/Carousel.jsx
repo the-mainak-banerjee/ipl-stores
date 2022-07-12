@@ -26,7 +26,7 @@ export const Carousel = () => {
         <img src={carousal[currentIndex]} alt='hero' className='w-full h-full object-contains border-2 border-primary'/>
         <Link to='/products'>
             <button 
-                className='absolute bottom-5 left-[20%] md:left-[calc(50%-7rem)] bg-primary text-white px-12 py-2 rounded-md text-2xl border-secondary border-2 shadow-2xl hover:bg-secondary hover:text-black hover:border-primary transition-all'> Shop Now 
+                className='absolute bottom-5 left-[20%] md:left-[calc(50%-7rem)] bg-primary text-white px-12 py-2 rounded-md text-2xl shadow-2xl border-2 hover:bg-secondary hover:text-black hover:border-primary hover:scale-110 transition-all'> Shop Now 
             </button>
         </Link>
     </section>

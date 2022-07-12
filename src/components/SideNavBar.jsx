@@ -7,7 +7,7 @@ import { ImCross } from 'react-icons/im'
 
 export const SideNavBar = (props) => {
 
-    const user = false;
+    const user = true;
 
   return (
     <div className='w-full h-full fixed top-4 left-0 bg-[#F0F0F0] z-50'>
