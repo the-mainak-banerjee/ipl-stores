@@ -3,6 +3,7 @@ import { ProductCard } from './ProductCard'
 import { BsList } from 'react-icons/bs'
 import { BiBorderAll } from 'react-icons/bi'
 import {v4 as uuidV4} from 'uuid'
+import { useFilter } from '../context/filter-context'
 
 export const ProductList = ({ products }) => {
 
@@ -10,13 +11,13 @@ export const ProductList = ({ products }) => {
   const pageLimit = 3;
   const [showBoxStyle, setShowBoxStyle] = useState(false)
   const [currentPage,setCurrentPage] = useState(1)
+  const { filteredProducts } = useFilter()
   // const [totalPages, setTotalPages] = useState()
 
   
-  // useEffect(() => {
-    //   setTotalPages(Math.ceil(products?.length / dataLimit))
-    //   setCurrentPage(1)
-    // },[products?.length,dataLimit])
+  useEffect(() => {
+      setCurrentPage(1)
+    },[filteredProducts])
     
     
     
@@ -77,6 +78,7 @@ export const ProductList = ({ products }) => {
         src= {item.src}
         discount={item.discount}
         showBoxStyle = {showBoxStyle}
+        rating = {item.rating}
       />
     )
   })

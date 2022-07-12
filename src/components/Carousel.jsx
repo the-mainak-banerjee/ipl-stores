@@ -12,7 +12,7 @@ export const Carousel = () => {
                 ? 0
                 : data + 1
             })
-        }, 5000)
+        }, 3000)
         
         return () => {
             clearInterval(timer)
