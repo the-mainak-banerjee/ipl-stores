@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { PrimaryButton, ProductList } from '../components'
+import { PrimaryButton, ProductList, SubNavbar } from '../components'
 import { AiOutlineHeart } from 'react-icons/ai'
 
 export const WishList = () => {
@@ -59,6 +59,9 @@ export const WishList = () => {
 
   return (
     <>
+        <section>
+          <SubNavbar pageName='Wishlist'/>
+        </section>
         {wishListItems.length>0 
           ? <section className='my-8'>
                 <ProductList products={wishListItems}/>
