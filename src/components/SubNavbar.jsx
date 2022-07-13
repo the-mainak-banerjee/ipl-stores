@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export const SubNavbar = ({pageName}) => {
+
+
   return (
     <div 
         className='bg-ternary pl-10 py-10 lg:px-36'
